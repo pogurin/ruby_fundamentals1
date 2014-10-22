@@ -1,10 +1,11 @@
-name = "Tom"
-puts "Hi #{name}!" 
+puts "What is your name? "
+name =  gets.chomp
+puts "You are #{name}!".upcase  
 
 puts "How old are you?"
-age = 42
-puts "Hi I am #{age} years old!"
-puts "When did you born ?"
-puts 2014 - age.to_i 
+age = gets.chomp
+puts "Hi #{name} are #{age} years old!"
+puts "You were born:#{Time.now.year - age.to_i}"
+
 
 # Asking age also asnwer the year when he/she borned.
